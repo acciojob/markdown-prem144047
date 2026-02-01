@@ -20,12 +20,12 @@ function App(){
   },[]);
 
     if(loading){
-      return (<div><h1>Loading...</h1></div>)
+      return (<div className="loading"><h1>Loading...</h1></div>)
     }
  
     return(
       <div className="app">
-        <textarea onChange={handleChange}/>
+        <textarea className="textarea" onChange={handleChange}/>
         <ReactMarkdown className="preview" children={markdown}/>
       </div>
     )
